@@ -1,4 +1,5 @@
 import React from 'react'
+import './greeting.css'
 
 function Greeting(){
     // Date
@@ -25,7 +26,7 @@ function Greeting(){
     greetingStyle.color = "#333"
   }
     return(
-        <div>
+        <div className="greeting">
             <h1>Hello React App, <span style={greetingStyle}>{greeting}</span></h1>
         </div>
     )

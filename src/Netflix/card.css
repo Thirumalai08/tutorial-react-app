@@ -1,0 +1,22 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    align-items: stretch;
+    margin: 30px;
+}
+.cards .card {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 3px;
+    text-align: center;
+}
+.cards .card .card__img {
+    width: 100%;
+}
+.text {
+    padding: 0 20px 20px;
+}
+.text h3 {
+    text-transform: uppercase;
+}
