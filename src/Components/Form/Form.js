@@ -11,10 +11,15 @@ function Form(){
     const inputChangeEvent = (event) => {
         console.log(event.target.value)
         console.log(event.target.name)
-        const value = event.target.value
-        const name = event.target.name
+        //const value = event.target.value
+        //const name = event.target.name
+        const {name,value} = event.target
         setName((preValue)=>{
-            if(name === 'fname'){
+            return {
+                ...preValue,
+                [name]:value,
+            }
+            /*if(name === 'fname'){
                 return {
                 fname: value,
                 lname: preValue.lname,
@@ -24,7 +29,7 @@ function Form(){
                 fname: preValue.fname,
                 lname: value,
                 }
-            } 
+            } */
         })
     }
     // on click event
