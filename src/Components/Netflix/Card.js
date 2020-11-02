@@ -7,7 +7,7 @@ function Card(){
         <div >
             {Sdata.map((val)=>{
                 return (
-                    <Netflix imgSrc={val.imgSrc} 
+                    <Netflix key={val.id} imgSrc={val.imgSrc} 
             category={val.category} title={val.title} 
             link={val.link} />
                 )
