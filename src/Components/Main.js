@@ -2,6 +2,7 @@ import React from 'react'
 import Calculator from './Calculator/Calculator'
 import Counter from './Counter/Counter'
 import Form from './Form/Form'
+import Login from './Form/Login/Login'
 import Greeting from './Greetings/Greeting'
 import Card from './Netflix/Card'
 import Clock from './Time/Clock'
@@ -18,6 +19,7 @@ function Main(){
             <Time />
             <Clock />
             <Form />
+            <Login />
         </div>
     )
 }
