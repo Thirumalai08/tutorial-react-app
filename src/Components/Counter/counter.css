@@ -1,0 +1,26 @@
+.counter {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #12222d;
+}
+.counter .counter-content {
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+.counter .counter-content h4 {
+    color: #fff;
+    font-size: 60px;
+}
+.counter .counter-content button {
+    padding: 10px 40px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+}

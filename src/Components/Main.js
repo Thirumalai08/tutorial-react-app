@@ -1,8 +1,9 @@
 import React from 'react'
 import Calculator from './Calculator/Calculator'
+import Counter from './Counter/Counter'
 import Greeting from './Greetings/Greeting'
 import Card from './Netflix/Card'
-import Slot from './SlotMachine/Slot'
+//import Slot from './SlotMachine/Slot'
 //import Netflix from './Netflix/Netflix'
 function Main(){
     return(
@@ -10,7 +11,7 @@ function Main(){
             <Greeting />
             <Calculator />
             <Card />
-            <Slot />
+            <Counter />
         </div>
     )
 }
