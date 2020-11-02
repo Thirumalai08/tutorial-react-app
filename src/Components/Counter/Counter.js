@@ -3,15 +3,20 @@ import './counter.css'
 function Counter(){
     // State to manage the count
     const [count,setCount] = useState(0)
-    const handleCount = () => {
+    const handleInc = () => {
         setCount(count + 1)
+        //console.log('Clicked')
+    }
+    const handleDec = () => {
+        setCount(count - 1)
         //console.log('Clicked')
     }
     return(
         <div className="counter">
             <div className="counter-content">
                 <h4>{count}</h4>
-                <button onClick={handleCount}>Click</button>
+                <button onClick={handleInc}>Increment</button>
+                <button onClick={handleDec}>Decrement</button>
             </div>
         </div>
     )
