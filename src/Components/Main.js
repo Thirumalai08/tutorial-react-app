@@ -1,6 +1,7 @@
 import React from 'react'
 import Calculator from './Calculator/Calculator'
 import Counter from './Counter/Counter'
+import Form from './Form/Form'
 import Greeting from './Greetings/Greeting'
 import Card from './Netflix/Card'
 import Clock from './Time/Clock'
@@ -16,6 +17,7 @@ function Main(){
             <Counter />
             <Time />
             <Clock />
+            <Form />
         </div>
     )
 }
