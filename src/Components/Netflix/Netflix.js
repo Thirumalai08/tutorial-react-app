@@ -4,7 +4,7 @@ import './netflix.css'
 function Netflix(props){
     return(
         <div>
-        <h2 style={{textAlign:"center",marginTop:"60px"}}>List of Web Series</h2>
+            <div style={{display:"flex",alignItems:"center",justifyContent:"center",margin:"20px"}}>
             <div className="cards">
                 <div class="card">
                     <div class="card-header">
@@ -17,6 +17,7 @@ function Netflix(props){
                         <a href={props.link}>Watch Now</a>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     )

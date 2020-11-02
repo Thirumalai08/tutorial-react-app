@@ -1,11 +1,17 @@
 import React from 'react'
 import Netflix from './Netflix'
+import Sdata from '../../Sdata'
 function Card(){
+
     return(
-        <div>
-            <div style={{display:"flex",alignItems:"center",justifyContent:"center",flexDirection:"column",height:"100vh",margin:"0"}}>
-            <Netflix  />
-            </div>
+        <div >
+            {Sdata.map((val)=>{
+                return (
+                    <Netflix imgSrc={val.imgSrc} 
+            category={val.category} title={val.title} 
+            link={val.link} />
+                )
+            })}
         </div>
     )
 }
