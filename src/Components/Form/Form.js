@@ -19,7 +19,12 @@ function Form(){
                 fname: value,
                 lname: preValue.lname,
                 }
-            }
+            }else if(name === 'lname'){
+                return {
+                fname: preValue.fname,
+                lname: value,
+                }
+            } 
         })
     }
     // on click event
